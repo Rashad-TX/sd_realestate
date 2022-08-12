@@ -1,0 +1,128 @@
+
+
+.logo2{
+  width: 10rem;
+}
+.navbar{
+  background-color: black;
+
+  margin-top: -1.5rem;
+ }
+
+.navbar-nav a{
+  color: white;
+  font-size: 1.1rem;
+}
+
+ .navbar-nav a:hover{
+  color:red;
+ }
+
+.dropdown-menu a{
+  color: black;
+}
+
+.navbar-toggler-icon{
+  background-color: red;
+  border: solid white 0.1rem;
+
+}
+
+
+.carousel {
+  height: 50rem;
+}
+
+.carousel img{
+  max-height: 50rem;
+}
+
+ .carousel-caption {
+  color: black;
+  right: 40%;
+  text-align: center;
+  left: auto;
+  top: 50%;
+  transform: translateY(-70%);
+  bottom: initial;
+} 
+
+.c-logo{
+  width: 25rem;
+}
+
+.hero-btn{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: solid white 0.2rem;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
+.hero-btn:hover{
+  background-color: red;
+}
+
+.feature-sq{
+  padding-top: 6rem;
+}
+
+.fl-txt{
+  font-size:4rem;
+  font-weight: bold;
+  
+  }
+  .fl-txt2{
+    font-size:1.7rem;
+    color: red;
+    padding-left: 10rem;
+    }
+
+    .featured-map{
+      border: solid white 0.2rem;
+      display: flex;
+      cursor: pointer;
+      background-size: 95%;
+           -moz-transition: background-size 500 linear;
+      -o-transition: background-size 500 linear;
+      -ms-transition: background-size 500ms linear;
+      transition: background-size 500ms linear;
+     }
+
+     .featured-map:hover{
+      background-size: 100%; 
+ 
+     }
+
+
+
+     .fl-cntr{
+      display: flex;
+      align-self: flex-end;
+      color: white;
+      font-size: bolder;
+      flex-direction: row;
+    }
+
+    .st-cntr, .price-cntr{
+      background-color: lightgray;
+      color: black;
+    
+    }
+
+       .featured-price{
+      padding-left: 0.5rem;
+      font-weight: bolder;
+    }
+
+    .vd-text{
+      margin: 0.5rem;
+      background-color: black;
+    }
+
+   
