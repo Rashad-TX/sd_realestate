@@ -56,11 +56,12 @@
     background-repeat: no-repeat;
     border: solid white 0.2rem;
     color: white;
-    font-size: 1.2rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 0.8rem;
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    font-weight: bolder;
 }
 
 
@@ -69,7 +70,7 @@
 }
 
 .feature-sq{
-  padding-top: 6rem;
+  padding-top: 2rem;
 }
 
 .fl-txt{
@@ -99,6 +100,11 @@
  
      }
 
+     .feature-sq::before{
+      content: url(/public/images/decor.png);
+      display: block;
+      color: red;
+           }
 
 
      .fl-cntr{
@@ -109,9 +115,26 @@
       flex-direction: row;
     }
 
+    .ft-btn{
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: solid lightgray 0.2rem;
+      color: darkslategray;
+      font-size: 1rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+       }
+
+.ft-btn-cntr{
+  display:flex;
+  justify-content: center;
+}
+
     .st-cntr, .price-cntr{
       background-color: lightgray;
-      color: black;
+      color: white;
     
     }
 
@@ -125,4 +148,85 @@
       background-color: black;
     }
 
+    .feature-sq2{
+     
+      height:50%;
+      display: flex;
+      justify-content: center;
+      padding-top: 6rem;
+  
+    }
+
+    .ft-map-txt{
+      color: white;
+      background-color: black;
+      padding: 1rem;
+      font-size: 1.5rem;
+      width: 75%;
+      text-align: center;
+    }
+
+    .Netflix-ad{
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:70rem;
+      padding-top: 2rem;
+    }
    
+  .name-cntr{
+    display: flex;
+    align-self: center;
+  }
+
+.grid{
+  padding-top: 2rem;
+}
+
+.boxes{
+  position: relative;
+  border: solid white 2rem;
+}
+
+  .box1::before,.box3::before,.box5::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.90);
+    border: solid white 0.2rem;
+  }
+
+  .box2::before,.box4::before,.box6::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(229,0,0,0.90);
+    border: solid white 0.2rem;
+  }
+
+  .box-text{
+    margin-top: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+    border: solid white 0.1rem;
+    cursor:pointer;
+  }
+
+
+  .flash-border{
+ border: solid transparent;
+padding: 2rem;
+padding-bottom: 6rem;
+  }
+
+  .flash-border:hover{
+    border: solid white 0.1rem;
+  }
+  
+  
+

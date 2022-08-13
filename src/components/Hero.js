@@ -8,6 +8,7 @@ import car5 from "../assets/images/car5.png"
 import clogo from "../assets/images/c_logo.png" ;
 
 
+
 const Hero =() => {
 
     return(
