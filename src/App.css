@@ -194,7 +194,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.90);
+    background-color: rgba(0,0,0,0.70);
     border: solid white 0.2rem;
   }
 
@@ -205,7 +205,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(229,0,0,0.90);
+    background-color: rgba(229,0,0,0.70);
     border: solid white 0.2rem;
   }
 
@@ -227,6 +227,73 @@ padding-bottom: 6rem;
   .flash-border:hover{
     border: solid white 0.1rem;
   }
-  
-  
 
+  .review-sec{
+    padding-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:3rem;
+  }
+
+
+  .main-card-cntr{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 25%;
+background-color:black;
+color:white;
+  }
+  
+.header-image{
+  padding-top:2rem;
+
+}
+
+  .card-name-comm{
+    font-size:1.2rem;
+  }
+
+  .rev-comments{
+    font-size:1.5rem;
+    width: 70%
+  }
+
+
+  .review-img{
+    width: null;
+		resize: 'contain';
+		height: 100px;
+    border-radius: 50px;
+  }
+  
+.rev-btn-cntr{
+  display:flex;
+  flex-direction:row;
+  padding-bottom: 1rem;
+}
+
+.back-btn, .forward-btn{
+  cursor: pointer;
+  background-color:lightgray;
+  border: white solid 0.2rem;
+  width: 2.5rem;
+  
+}
+.star-rating{
+  width:12rem;
+}
+
+.back-btn{
+   margin-right: 1rem;
+}
+.forward-btn{
+  margin-left: 1rem;
+}
+
+.com-txt{
+  text-align: center;
+}

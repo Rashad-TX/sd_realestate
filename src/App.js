@@ -18,11 +18,8 @@ function App() {
  <Rotate topLeft>
     <Netflix/>
     </Rotate>
-  
-  
-      <Grid/>
-     
-      <Reviews/>
+    <Grid/>
+    <Reviews/>
 
    
     </div>

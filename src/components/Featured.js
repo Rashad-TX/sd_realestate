@@ -75,7 +75,7 @@ const featured = () =>{
 
 
 const displayFeatured = FeaturedList.map(element => <div className="col-lg-4 featured-map" 
-style={{ backgroundImage: `url("${element.mainimg}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}>
+style={{ backgroundImage: `url("${element.mainimg}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }} key={element.id}>
  <div className="fl-cntr">
  <div className="st-cntr"><p className="featured-st"> {element.street} </p></div>  
  <div className ="price-cntr"><p className="featured-price">{element.price} </p></div>  

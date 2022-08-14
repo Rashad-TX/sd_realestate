@@ -15,51 +15,51 @@ const Grid = () => {
         <div className=" grid container">
            <div className ="row">
                <div className ="col-md-4 boxes box1 card" style={{ backgroundImage: `url("${listbox}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}>  
-        <div class="card-img-overlay card-inverse"> 
+        <div className="card-img-overlay card-inverse"> 
         <div className="flash-border">
-        <h4 class="text-stroke text-white box-text"> LIST WITH US</h4>
+        <h4 className="text-stroke text-white box-text"> LIST WITH US</h4>
         </div>
         </div>
         </div>
 
         <Zoom>        
         <div className ="col-md-4 boxes box2 card" style={{ backgroundImage: `url("${imapbox}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}> 
-        <div class="card-img-overlay card-inverse"> 
+        <div className="card-img-overlay card-inverse"> 
         <div className="flash-border">
-        <h4 class="text-stroke text-white box-text">MAP</h4>
+        <h4 className="text-stroke text-white box-text">MAP</h4>
          </div>
         </div>
         </div>
         </Zoom>
         <div className ="col-md-4 boxes box3 card" style={{ backgroundImage: `url("${offbox}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}> 
-        <div class="card-img-overlay card-inverse"> 
+        <div className="card-img-overlay card-inverse"> 
         <div className="flash-border">
-        <h4 class="text-stroke text-white  box-text"> OUR OFFICES</h4>
+        <h4 className="text-stroke text-white  box-text"> OUR OFFICES</h4>
         </div>
         </div>
       </div>
       <Zoom>
         <div className ="col-md-4 boxes box4 card" style={{ backgroundImage: `url("${hoodbox}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}> 
-        <div class="card-img-overlay card-inverse"> 
+        <div className="card-img-overlay card-inverse"> 
         <div className="flash-border">
-        <h4 class="text-stroke text-white box-text"> CITY GUIDES</h4>
+        <h4 className="text-stroke text-white box-text"> CITY GUIDES</h4>
         </div>
         </div>
          </div>
          </Zoom>
        
         <div className ="col-md-4 boxes box5 card" style={{ backgroundImage: `url("${valbox}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}> 
-        <div class="card-img-overlay card-inverse"> 
+        <div className="card-img-overlay card-inverse"> 
         <div className="flash-border">
-        <h4 class="text-stroke text-white box-text "> APPRAISALS</h4>
+        <h4 className="text-stroke text-white box-text "> APPRAISALS</h4>
         </div>
         </div>
                 </div>
          <Zoom>
         <div className ="col-md-4 boxes box6 card"  style={{ backgroundImage: `url("${devbox}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}>
-        <div class="card-img-overlay card-inverse"> 
+        <div className="card-img-overlay card-inverse"> 
         <div className="flash-border">
-        <h4 class="text-stroke text-white box-text"> COMING SOON</h4>
+        <h4 className="text-stroke text-white box-text"> COMING SOON</h4>
         </div>
         </div>
         </div>
