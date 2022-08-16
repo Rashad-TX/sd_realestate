@@ -8,6 +8,8 @@ import Reviews from './components/Reviews';
 import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Zoom';
 import Rotate from 'react-reveal/Rotate';
+import Footer from './components/Footer';
+import FeaturedDisplay from './components/FeaturedDisplay';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
     </Rotate>
     <Grid/>
     <Reviews/>
+    <FeaturedDisplay/>
+    <Footer/>
 
    
     </div>

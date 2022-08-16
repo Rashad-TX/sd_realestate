@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
-import back from "../assets/images/back.svg" ;
-import next from "../assets/images/next.svg" ;
+import back from "../assets/images/left.png" ;
+import next from "../assets/images/right.png" ;
 import revbg from  "../assets/images/revbgjpg.jpg" ;
-
-
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 
 
@@ -18,23 +18,23 @@ const Reviews = () => {
         { id: 0,
         image:'./images/cust3.jpg',
         name: "Areal Person",
-        comment: "The Moore Group's aggressive marketing and communications skills make them the perfect agents!",
+        comment: "Aggressive marketing and perfect agents!!",
         stars: "./images/5star.png"
 },
 { id: 1,
     image: "./images/cust9.jpg",
     name: "Charles Barkley",
-    comment: "They were turable...",
+    comment: "They were turable...But they had good churros.",
     stars: "./images/2stars.png"
 },
 { id: 2,
-    image:"./images/custdog.jpg",
+    image:"./images/cust10.png",
     name: "Lisa Vanderpump",
-    comment: "They helped me buy a dream home for little Jigster. Now he has 15,000 square feet all to himself. Thanks team!",
+    comment: "Helped me find Little Jigster his own villa. ",
     stars: "./images/4star.png"
 },
 { id: 3,
-    image:"./images/jb.jpg",
+    image:"./images/cust11.png",
     name: "Jeff Bezos",
     comment: "They are my Prime-ary agency. See what I did there?",
     stars: "./images/5star.png",
@@ -53,7 +53,13 @@ const reverse = () => {
 
     return(
 <div className="review-sec">
-<div><h2>What Our Customers Are Saying:</h2></div>
+<Zoom>
+<div className="rev-bg2"><h2><span className="rev-txt-1">WHAT OUR</span><br></br><span className="rev-txt-2"> CLIENTS ARE SAYING</span></h2>
+ 
+  </div>
+  </Zoom>
+<div className="rev-bg">
+<Slide left>
 <div className="main-card-cntr">
 <div className = "header-image">
   <img src={RevComments[cardIndex].image} className="review-img" alt="home buyer"/>
@@ -65,6 +71,9 @@ const reverse = () => {
 <img src={back} alt="back arrow" onClick={reverse} class="back-btn"/>
 <img src={next} alt="next arrow" onClick={forward} class="forward-btn"/>
        </div>  
+  </div>
+  </Slide>
+
   </div>
       
 </div>
