@@ -10,19 +10,22 @@ import Flip from 'react-reveal/Zoom';
 import Rotate from 'react-reveal/Rotate';
 import Footer from './components/Footer';
 import FeaturedDisplay from './components/FeaturedDisplay';
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Navigation/>
       <Hero/>
-    <Featured/>
- <Rotate topLeft>
-    <Netflix/>
-    </Rotate>
+      <Featured/>
+<Rotate topLeft>
+      <Netflix/>
+</Rotate>
     <Grid/>
     <Reviews/>
-    <FeaturedDisplay/>
+
+      <FeaturedDisplay/>
+    
     <Footer/>
 
    

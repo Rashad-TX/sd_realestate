@@ -342,8 +342,26 @@ flex-direction: column;
         padding-left: 10rem;
        }
 
-
 .ft-disp-sec{
-  height: "5000px"
+  display:flex;
+flex-direction: row;
+justify-content: space-between;
+
+align-items: center;
 }
+
+
+.left-btn{
+cursor:pointer;
+
+}
+
+.right-btn{
+cursor: pointer;
+ }
+
+ .ft-disp-prev, .ft-disp-next {
+  width: 6rem;
+ }
+
 

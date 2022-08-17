@@ -1,5 +1,4 @@
 import React from "react";
-import decor from "../assets/images/decor.png";
 import Bounce from 'react-reveal/Bounce';
 import { FeaturedList } from "../helpers/FeaturedList";
 
@@ -11,7 +10,7 @@ const featured = () =>{
 
 const displayFeatured = FeaturedList.map(element => <div className="col-lg-4 featured-map" 
 style={{ backgroundImage: `url("${element.mainimg}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }} key={element.id}>
- <div className="fl-cntr" onClick={console.log("I was clicked")} >
+ <div className="fl-cntr" >
  <div className="st-cntr"><p className="featured-st"> {element.street} </p></div>  
  <div className ="price-cntr"><p className="featured-price">{element.price} </p></div>  
  <div className="vd-text">VIEW DETAILS +</div> 
