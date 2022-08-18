@@ -343,17 +343,21 @@ flex-direction: column;
        }
 
 .ft-disp-sec{
-  display:flex;
+  display: flex;
+  flex-direction: column;
+}       
+
+.arrow-cntr{
+display:flex;
 flex-direction: row;
-justify-content: space-between;
+align-self: flex-start;
+padding-top:1rem;
+padding-bottom: 2rem;
 
-align-items: center;
 }
-
 
 .left-btn{
 cursor:pointer;
-
 }
 
 .right-btn{
@@ -364,4 +368,77 @@ cursor: pointer;
   width: 6rem;
  }
 
+ .slider-sec{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  width:40%;
+  height: 30%;
+  padding-top: 25rem;
 
+ }
+
+
+
+ .slider-content{
+  background-color: white;
+  width: 100%;
+  border-top: solid red 0.2rem;
+  padding:1rem;
+ }
+
+ .slider-st{
+  font-size: 2rem;
+  font-weight: bold;
+ }
+
+ .slider-city{
+  font-size:1.3rem;
+ }
+
+ .slider-price{
+  font-size:2.1rem;
+  color: red;
+  font-weight: bolder;
+ }
+
+ .slider-sec img{
+  width: 1.5rem;
+  padding-bottom: 1rem;
+ }
+
+ .slider-st,
+  .slider-city,
+  .slider-price,
+  .slider-bed,
+  .slider-bath,
+  .slider-sqft{
+    display:flex;
+    flex-direction: row;
+   
+  }
+
+  .fd-options-cntr{
+display: flex;
+flex-direction: column;
+ height: 10%;
+ width: 10%;
+
+  }
+
+.show-btn, .exit-btn{
+  width: 10rem;
+  border: solid red;
+  background-color: black;
+  color: white;
+}
+
+.show-btn:hover{
+  background-color: white;
+  color:black;
+}
+.exit-btn:hover{
+  background-color: white;
+  color:black;
+}
