@@ -5,11 +5,17 @@ import next from "../assets/images/next.png";
 import bedroom from "../assets/images/bedroom.svg";
 import bathroom from "../assets/images/bathroom.svg";
 import sqft from "../assets/images/sqft.svg";
+import Featured from "./Featured";
+import { useParams } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 
 const FeaturedDisplay = () => {
-const [imgPos, setImgPos] =useState(0);
+  const [imgPos, setImgPos] =useState(0);
 const [sliderVisibility, setSliderVisibility] = useState('visible');
+
+const { id } = useParams();
+const navigate= useNavigate();
 
 const contentVisibility = () =>{
   if (sliderVisibility === 'visible'){
@@ -29,21 +35,23 @@ const contentVisibility = () =>{
   }
 
   const nextimg = () => {
-    if (imgPos === FeaturedList[0].images.length -1 ) {
+    if (imgPos === FeaturedList[id].images.length -1 ) {
       setImgPos((imgPos) => imgPos - imgPos);
    
     
     } else {
       setImgPos((imgPos) => imgPos + 1);
-    
+    console.log(FeaturedList[id].images[imgPos])
     }
   };
 
+console.log(FeaturedList[id].images[0])
 
     return(
 
-<div className="ft-disp-sec" style={{backgroundImage:`url(${FeaturedList[0].images[imgPos]})`,backgroundPosition: 'center',
+<div className="ft-disp-sec" style={{backgroundImage:`url(${FeaturedList[id].images[imgPos]})`,backgroundPosition: 'center',
     backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: "100vh",}}>
+
 
 <div className="arrow-cntr">
 <div className="left-btn"><img src={prev} className="ft-disp-prev" onClick={previmg}/></div>
@@ -52,20 +60,20 @@ const contentVisibility = () =>{
 </div>
 
 <div fd-options-cntr>
-<button onClick={contentVisibility} className="show-btn">Show/Hide Details</button><br></br>
-<button className="exit-btn">Exit</button>
+<button onClick={contentVisibility} className="show-btn">Details</button><br></br>
+<Link to="/"><button className="exit-btn" >Exit</button></Link>
 </div>
 
 
 
 <div className="slider-sec" style={{visibility:sliderVisibility}} >
 <div className="slider-content">
-<div className="slider-st">{FeaturedList[0].street}</div>
-<div className="slider-city">{FeaturedList[0].city}</div>
-<div className="slider-price">{FeaturedList[0].price}</div>
-<div className="slider-bed">{FeaturedList[0].beds}<img src={bedroom} alt="bedroom-img"/> <p>BEDS</p></div>
-<div className="slider-bath"> {FeaturedList[0].baths}<img src={bathroom} alt ="bathroom-img"/><p>BATHS</p></div>
-<div className="slider-sqft"> {FeaturedList[0].sqft}<img src={sqft} alt ="sqft-img"/><p>SQ FT</p></div>
+<div className="slider-st">{FeaturedList[id].street}</div>
+<div className="slider-city">{FeaturedList[id].city}</div>
+<div className="slider-price">{FeaturedList[id].price}</div>
+<div className="slider-bed">{FeaturedList[id].beds}<img src={bedroom} alt="bedroom-img"/> <p>BEDS</p></div>
+<div className="slider-bath"> {FeaturedList[id].baths}<img src={bathroom} alt ="bathroom-img"/><p>BATHS</p></div>
+<div className="slider-sqft"> {FeaturedList[id].sqft}<img src={sqft} alt ="sqft-img"/><p>SQ FT</p></div>
 </div>
 </div>
 

@@ -362,11 +362,22 @@ cursor:pointer;
 
 .right-btn{
 cursor: pointer;
- }
+}
 
  .ft-disp-prev, .ft-disp-next {
-  width: 6rem;
+  width: 3rem;
+  transition: transform .5s ease;
+ 
  }
+
+.ft-disp-prev:hover{
+  transform: scale(1.5)
+}
+
+.ft-disp-next:hover{
+  transform: scale(1.5)
+}
+
 
  .slider-sec{
   display: flex;
@@ -428,10 +439,11 @@ flex-direction: column;
   }
 
 .show-btn, .exit-btn{
-  width: 10rem;
+  width: 5rem;
   border: solid red;
   background-color: black;
   color: white;
+  font-size: 0.7rem;
 }
 
 .show-btn:hover{

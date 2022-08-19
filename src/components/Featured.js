@@ -1,21 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import Bounce from 'react-reveal/Bounce';
 import { FeaturedList } from "../helpers/FeaturedList";
+import { useNavigate, Link } from "react-router-dom";
 
 
 
+const Featured = () =>{
+const [objId, setObjId]=useState(0);
+const navigate = useNavigate();
 
-const featured = () =>{
 
-
-const displayFeatured = FeaturedList.map(element => <div className="col-lg-4 featured-map" 
-style={{ backgroundImage: `url("${element.mainimg}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }} key={element.id}>
+const displayFeatured = FeaturedList.map(element => (<div className="col-lg-4 featured-map" 
+style={{ backgroundImage: `url("${element.mainimg}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }} key={element.id}
+onClick =  {(event) =>{ navigate(`/featured/${element.id}`)}}>
  <div className="fl-cntr" >
  <div className="st-cntr"><p className="featured-st"> {element.street} </p></div>  
  <div className ="price-cntr"><p className="featured-price">{element.price} </p></div>  
  <div className="vd-text">VIEW DETAILS +</div> 
  </div>
  </div>
+)
  )
 
 
@@ -36,4 +40,4 @@ style={{ backgroundImage: `url("${element.mainimg}")`, backgroundPosition: 'cent
     )
 }
 
-export default featured;
+export default Featured;
