@@ -6,15 +6,18 @@
 .navbar{
   background-color:black;
   margin-top: -1.5rem;
+
  }
 
 .navbar-nav a{
   color: white;
   font-size: 1.1rem;
+
 }
 
  .navbar-nav a:hover{
-  color:red;
+ color: red;
+ 
  }
 
 .dropdown-menu a{
@@ -61,11 +64,12 @@
     overflow: hidden;
     outline: none;
     font-weight: bolder;
-}
+   }
 
 
 .hero-btn:hover{
   background-color: red;
+  
 }
 
 .feature-sq{
@@ -454,3 +458,21 @@ flex-direction: column;
   background-color: white;
   color:black;
 }
+
+.forms{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: left;
+}
+
+.filter-sec{
+  border: solid black 0.2rem;
+  width: 30%;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;  
+}
+
+
+
+

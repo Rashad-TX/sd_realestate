@@ -1,17 +1,11 @@
 import './App.css';
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import Featured from './components/Featured'; 
- import Netflix from './components/Netflix';
-import Grid from './components/Grid';
-import Reviews from './components/Reviews';
-import Zoom from 'react-reveal/Zoom';
-import Flip from 'react-reveal/Zoom';
-import Rotate from 'react-reveal/Rotate';
 import Footer from './components/Footer';
 import FeaturedDisplay from './components/FeaturedDisplay';
 import { Routes, Route, Link } from "react-router-dom";
 import Home from './components/Home';
+import AllDisplay from './components/AllDisplay';
+import AllPage from './components/AllPage';
 
 function App() {
   return (
@@ -21,6 +15,8 @@ function App() {
 <Routes>
       <Route path= "/" element={<Home/>} />
       <Route path= "/featured/:id" element={<FeaturedDisplay/>} />
+      <Route path= "/all" element={<AllPage/>} />
+      <Route path= "/all/:id" element={<AllDisplay/>} />
 </Routes>
     
     <Footer/>

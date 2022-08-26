@@ -6,7 +6,6 @@ import { useNavigate, Link } from "react-router-dom";
 
 
 const Featured = () =>{
-const [objId, setObjId]=useState(0);
 const navigate = useNavigate();
 
 
@@ -24,11 +23,12 @@ onClick =  {(event) =>{ navigate(`/featured/${element.id}`)}}>
 
 
     return(
-        <section className="feat-sec">
+        <section className="feat-sec" id="feat-sec">
          <div className="container">
         <div className = "row">
+       
         <Bounce>
-        <div className = "col-lg-4 feature-sq">  <h2><span className="fl-txt">FEATURED</span> <br></br><span className="fl-txt2">LISTINGS</span></h2> <div className ="ft-btn-cntr"><button className="ft-btn">VIEW ALL PROPERTIES</button></div></div>
+        <div className = "col-lg-4 feature-sq">  <h2><span className="fl-txt">FEATURED</span> <br></br><span className="fl-txt2">LISTINGS</span></h2> <div className ="ft-btn-cntr"><Link to ="/all"><button className="ft-btn" >VIEW ALL PROPERTIES</button></Link></div></div>
         </Bounce>
         {displayFeatured }
         <Bounce>
