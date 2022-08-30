@@ -13,6 +13,13 @@ const BedroomOptions = [
     6
 ]
 
+const BathroomOptions = [
+    1,
+    2,
+    3,
+    4
+]
+
 const SquareFeetOptions = [
     { min: 2000, max: 3000 },
     { min: 3000, max: 4000 },
@@ -20,6 +27,15 @@ const SquareFeetOptions = [
     { min: 5000, max: 6000 },
     { min: 6000 }
 ]
+
+const PriceOptions = [
+    { min: 2000, max: 3000 },
+    { min: 3000, max: 4000 },
+    { min: 4000, max: 5000 },
+    { min: 5000, max: 6000 },
+    { min: 6000 }
+]
+
 
 const AllPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -38,7 +54,7 @@ const AllPage = () => {
         properties = properties.filter(property => property.beds === numberOfBedrooms)
     }
     if (numberOfBathrooms !== undefined) {
-
+        properties = properties.filter(property => property.baths === numberOfBathrooms)
     }
     if (squarefeet !== undefined) {
         properties = properties.filter(property => {
@@ -81,16 +97,17 @@ const AllPage = () => {
                         <p className="form-cat-title"># Of Bedrooms</p>
                         {BedroomOptions.map((num) =>
                         (<label key={num.toString()}> <input type="radio" value={num.toString()} name="bedrooms" checked={numberOfBedrooms === num} onChange={(event) => {
-                            setNumberOfBedrooms(num)
+                         setNumberOfBedrooms(num)
                         }} /> {num === 6 ? "6+" : num} </label>))}
 
                     </div>
                     <div>
                         <p className="form-cat-title"># Of Bathrooms</p>
-                        <label> <input type="checkbox" value="beds" /> 1 </label>
-                        <label> <input type="checkbox" value="beds" /> 2 </label>
-                        <label> <input type="checkbox" value="beds" /> 3</label>
-                        <label> <input type="checkbox" value="beds" /> 4+ </label>
+                        {BathroomOptions.map((num) =>
+                        (<label key={num.toString()}> <input type="radio" value={num.toString()} name="bathrooms" checked={numberOfBathrooms === num} onChange={(event) => {
+                            setNumberOfBathrooms(num)
+                        }} /> {num === 4 ? "4+" : num} </label>))}
+                        
                     </div>
                     <div>
                         <p className="form-cat-title">Square Feet</p>
@@ -99,11 +116,8 @@ const AllPage = () => {
                         )}
 
                     </div>
-                    <div>
-
-                        <label> Price<input type="range" value="price" /> $0 - $50,000,000 </label>
-                    </div>
-                    <div className="sort-sec">Sort Results $:  <input className="asc" type="radio" value="asc" onChange={() => setSortOrder('asc')} checked={sortOrder === 'asc'} />Ascending <input type="radio" className="desc" value="desc" onChange={() => setSortOrder('desc')} checked={sortOrder == 'desc'} /> Descending</div>
+             
+                    <div className="sort-sec">Sort Price $:  <input className="asc" type="radio" value="asc" onChange={() => setSortOrder('asc')} checked={sortOrder === 'asc'} />Highest <input type="radio" className="desc" value="desc" onChange={() => setSortOrder('desc')} checked={sortOrder == 'desc'} /> Lowest</div>
                 </form>
 
             </div>
@@ -113,9 +127,7 @@ const AllPage = () => {
                         <div className="col-lg-4 feature-sq">  <h2><span className="fl-txt">All ACTIVE</span> <br></br><span className="fl-txt2">LISTINGS</span></h2> </div>
                     </Bounce>
                     {displayAll}
-                    <Bounce>
-                        <div className="col-lg-4 feature-sq2">  <p className="ft-map-txt">INTERACTIVE MAP </p></div>
-                    </Bounce>
+                 
                 </div>
             </div>
         </section>

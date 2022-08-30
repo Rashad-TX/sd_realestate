@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo2.png" ;
+import logo from "../assets/images/logoNew.png" ;
 import {Link, Hashlink} from "react-router-dom";
 import { NavHashLink } from 'react-router-hash-link';
 

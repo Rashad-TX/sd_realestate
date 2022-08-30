@@ -17,14 +17,14 @@ const Reviews = () => {
     const RevComments = [
         { id: 0,
         image:'./images/cust3.jpg',
-        name: "Areal Person",
+        name: "Ayreel Person",
         comment: "Aggressive marketing and perfect agents!!",
         stars: "./images/5star.png"
 },
 { id: 1,
     image: "./images/cust9.jpg",
     name: "Charles Barkley",
-    comment: "They were turable...But they had good churros.",
+    comment: "They were turrable...But they had good churros.",
     stars: "./images/2stars.png"
 },
 { id: 2,

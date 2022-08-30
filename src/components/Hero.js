@@ -1,11 +1,11 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import car1 from "../assets/images/car1.png"
-import car2 from "../assets/images/car2.png"
-import car3 from "../assets/images/car3.png"
-import car4 from "../assets/images/car4.png"
-import car5 from "../assets/images/car5.png"
-import clogo from "../assets/images/c_logo.png" ;
+import car4 from "../assets/images/carNew4.png"
+import car1 from "../assets/images/carNew00.png"
+import car2 from "../assets/images/carNew1.png"
+import car3 from "../assets/images/carNew2.png"
+import car5 from "../assets/images/CarNew02.png"
+import clogo from "../assets/images/blogonew.png" ;
 
 
 
@@ -18,7 +18,7 @@ const Hero =() => {
       <Carousel.Item interval={2200}>
         <img
           className="d-block w-100 active"
-          src={car1}
+          src={car4}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -29,7 +29,7 @@ const Hero =() => {
       <Carousel.Item interval={2200}>
         <img
           className="d-block w-100"
-          src={car2}
+          src={car3}
           alt="Second slide"
         />
 
@@ -41,7 +41,7 @@ const Hero =() => {
       <Carousel.Item interval={2200}>
         <img
           className="d-block w-100"
-          src={car3}
+          src={car2}
           alt="Third slide"
         />
 
@@ -53,7 +53,7 @@ const Hero =() => {
       <Carousel.Item interval={2200}>
         <img
           className="d-block w-100"
-          src={car4}
+          src={car1}
           alt="First slide"
         />
         <Carousel.Caption>
