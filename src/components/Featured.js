@@ -32,7 +32,7 @@ onClick =  {(event) =>{ navigate(`/featured/${element.id}`)}}>
         </Bounce>
         {displayFeatured }
         <Bounce>
-        <div className = "col-lg-4 feature-sq2">  <p className="ft-map-txt">INTERACTIVE MAP </p></div>
+       <div className = "col-lg-4 feature-sq2">  <Link to="/map" className="feat-sec-link" > <p className="ft-map-txt">INTERACTIVE MAP </p></Link></div>
         </Bounce>
         </div>
         </div>

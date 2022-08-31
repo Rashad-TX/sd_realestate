@@ -26,7 +26,7 @@ return(
                      </ul>
                      </li>
         <li className="nav-item">
-          <a className="nav-link px-3" href="#">MAP</a>
+          <Link to="/map" className="nav-link px-3">MAP </Link>
         </li>
         <li className="nav-item">
           <a className="nav-link px-3" href="#">SELLERS</a>
