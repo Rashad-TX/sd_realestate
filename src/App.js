@@ -22,9 +22,8 @@ function App() {
       <Route path= "/all/:id" element={<AllDisplay/>} />
       <Route path = "/map" element= {<InteractiveMap/>} />
       <Route path = "/contactus" element= {<Sellers/>} />
+<Route path = "/aboutus" element ={ <Aboutus/>} />
 </Routes>
-
-    <Aboutus/>
     <Footer/>
 
    

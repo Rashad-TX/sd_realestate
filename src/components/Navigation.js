@@ -36,9 +36,9 @@ return(
             OUR TEAM
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a className="dropdown-item" href="#">About Us</a></li>
-            <li><a className="dropdown-item" href="#">Our Agents</a></li>
-            <li><a className="dropdown-item" href="#">Contact Us</a></li>
+            <li><Link className="dropdown-item" to="/aboutus">About Us</Link></li>
+            <li><Link className="dropdown-item" to="/aboutus">Our Team</Link></li>
+            <li><Link className="dropdown-item" to="/contactus">Contact Us</Link></li>
           </ul>
         </li>
       </ul>

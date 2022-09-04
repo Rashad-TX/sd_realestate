@@ -716,12 +716,21 @@ color: white;
 .three-containers{
   background-image: url("/public/images/aboutbg.png");
   background-size:cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: -1rem;
+
 }
+
+.bioarea{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 
 .abtctnr:hover {
   position: relative;
-
- 
 }
 
 .team-img{
@@ -733,9 +742,8 @@ color: white;
   transition: .5s ease;
 }
 
-.middle {
-  transition: .5s ease;
-  position: absolute;
+.middle{
+   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -743,11 +751,13 @@ color: white;
   background-color: red;
   border: solid 1px;
   color: white;
-
+  opacity: 0;
+  
 }
 
 .middle:hover{
-  visibility: visible;
+ opacity: 1;
+ cursor: pointer;
 }
 
 .name-text{
@@ -755,5 +765,60 @@ color: white;
   font-size: 1.1rem;
 }
 
+.about-txt-cntr{
+  padding-left:5rem;
+}
 
+.about-txt1{
+color: white;
+font-size:6rem;
+}
 
+.about-txt2{
+  color: black;
+  font-size:8rem;
+  font-weight: bolder;
+ }
+
+.about-txt3{
+  color: red;
+  font-size:6rem;
+  padding-left: 15rem;
+ }
+
+ .team-bio{
+  color: white;
+  font-size:1.5rem;
+  text-align: center;
+  width: 80%;
+  padding-left:25rem;
+ }
+
+ .bio-div{
+  backdrop-filter: blur(15px);
+   }
+
+ .bio-pic2{
+  width:18rem;
+ }
+
+ .bio-text2{
+  align-self: flex-end;
+  color:white;
+  font-size:2rem;
+  
+ }
+
+ .team-gallery{
+  padding-top: 8rem;
+ }
+ 
+ #ourteam{
+  padding-top: 5rem;
+ }
+
+ .footer ul, Link, li{
+  list-style: none !important;
+  text-decoration: none !important;
+  color: white;
+ }

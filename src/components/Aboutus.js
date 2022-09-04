@@ -1,5 +1,4 @@
 import React from "react";
-import biopic from "../assets/images/bio_img.png";
 import sm from  "../assets/images/sebastianmoore.png";
 import jm from  "../assets/images/joemoore.png";
 import stephm from  "../assets/images/stephmoore.png";
@@ -13,6 +12,9 @@ import mm from "../assets/images/marshallmoore.png";
 import tm from "../assets/images/tommymoore.png";
 import dm from "../assets/images/davemoore.png";
 import dom from "../assets/images/DominoeMoore.png";
+import rm from "../assets/images/rm2.png";
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 const Aboutus = () => {
 
@@ -20,20 +22,24 @@ const Aboutus = () => {
     return(
         <div className ="three-containers">
         <div id="aboutus">
-        <div className="about-txt-cntr">
-            <p className="about-txt"><span className="about-txt1">THE</span><span className="about-txt2">MOORE</span><span className="about-txt3">GROUP</span></p>
+        <Slide right> <div className="about-txt-cntr">
+            <p className="about-txt"><span className="about-txt1">THE</span><br></br><span className="about-txt2">MOORE</span><br></br><span className="about-txt3">GROUP</span></p>
         </div>
-        <div>
-            <p>The Moore Group is a professional real estate brokerage serving buyers and sellers of luxury property in San Diego County. The brokerage is comprised of a close group of talented realtors, led by the firm's President and Founder, Rashad Moore. With more than $1B+ in total sales and $300 million in active listings, the firm closes over one hundred deals annually and has brokered many of the City's largest residential sales, including numerous record-breaking transactions. Located in Downtown San Diego with unrivaled experience and market knowledge. The Moore Group is the preeminent brokerage in San Diego, La Jolla, & Del Mar. </p>
+       </Slide>
+        <div className="bio-div">
+          <p className="team-bio">The Moore Group is a professional real estate brokerage serving buyers and sellers of luxury property in San Diego County. The brokerage is comprised of a close group of talented realtors, led by the firm's President and Founder, Rashad Moore. With more than $1B+ in total sales and $300 million in active listings, the firm closes over one hundred deals annually and has brokered many of the City's largest residential sales, including numerous record-breaking transactions. Located in Downtown San Diego with unrivaled experience and market knowledge. The Moore Group is the preeminent brokerage in San Diego, La Jolla, & Del Mar. </p>
         </div>
+       
         </div>
 
         <div id="ourteam">
-        <div className="bioarea"><img src={biopic}/> <p>Owner/President/Broker</p></div>
+        <Slide left><div className="bioarea"><img src={rm} className="bio-pic2"/> 
         <div className="ourteam-txt-cntr">
             <p className="about-txt"><span className="about-txt1">OUR</span><span className="about-txt2">TEAM</span></p>
         </div>
-        <div className="container">
+        </div>
+        </Slide>
+        <div className="team-gallery container">
 <div className="row g-3">
 <div className="abtctnr col col-lg-3">
 <img src={stephm} className ="team-img"/>
