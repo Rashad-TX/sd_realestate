@@ -12,14 +12,14 @@ const InteractiveMap = () => {
     const [lng] = useState(-117.2470);
     const [lat] = useState(32.7495);
     const [zoom] = useState(12);
-   
+   const api_key= process.env.REACT_APP_API_KEY;
 console.log(process.env.REACT_APP_API_KEY)
 
     useEffect(() => {
         if (map.current) return; //stops map from intializing more than once
         map.current = new maplibregl.Map({
             container: mapContainer.current,
-            style: `https://api.maptiler.com/maps/streets/style.json?key=${process.env.REACT_APP_API_KEY}`,
+            style: `https://api.maptiler.com/maps/streets/style.json?key=${api_key}`,
             center: [lng, lat],
             zoom: zoom
         });
