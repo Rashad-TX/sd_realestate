@@ -51,10 +51,10 @@ const AllPage = () => {
 
     let properties = AllPropList.slice()
     if (numberOfBedrooms !== undefined) {
-        properties = properties.filter(property => property.beds === numberOfBedrooms)
+        properties = properties.filter(property => numberOfBedrooms === 6 ? property.beds >= numberOfBedrooms : property.beds === numberOfBedrooms)
     }
     if (numberOfBathrooms !== undefined) {
-        properties = properties.filter(property => property.baths === numberOfBathrooms)
+        properties = properties.filter(property => numberOfBathrooms === 4 ? property.baths >= numberOfBathrooms : property.baths === numberOfBathrooms)
     }
     if (squarefeet !== undefined) {
         properties = properties.filter(property => {
@@ -97,7 +97,7 @@ const AllPage = () => {
                         <p className="form-cat-title"># Of Bedrooms</p>
                         {BedroomOptions.map((num) =>
                         (<label key={num.toString()}> <input type="radio" value={num.toString()} name="bedrooms" checked={numberOfBedrooms === num} onChange={(event) => {
-                         setNumberOfBedrooms(num)
+                            setNumberOfBedrooms(num)
                         }} /> {num === 6 ? "6+" : num} </label>))}
 
                     </div>
@@ -107,7 +107,7 @@ const AllPage = () => {
                         (<label key={num.toString()}> <input type="radio" value={num.toString()} name="bathrooms" checked={numberOfBathrooms === num} onChange={(event) => {
                             setNumberOfBathrooms(num)
                         }} /> {num === 4 ? "4+" : num} </label>))}
-                        
+
                     </div>
                     <div>
                         <p className="form-cat-title">Square Feet</p>
@@ -116,7 +116,7 @@ const AllPage = () => {
                         )}
 
                     </div>
-             
+
                     <div className="sort-sec">Sort Price $:  <input className="asc" type="radio" value="asc" onChange={() => setSortOrder('asc')} checked={sortOrder === 'asc'} />Highest <input type="radio" className="desc" value="desc" onChange={() => setSortOrder('desc')} checked={sortOrder == 'desc'} /> Lowest</div>
                 </form>
 
@@ -127,7 +127,7 @@ const AllPage = () => {
                         <div className="col-lg-4 feature-sq">  <h2><span className="fl-txt">All ACTIVE</span> <br></br><span className="fl-txt2">LISTINGS</span></h2> </div>
                     </Bounce>
                     {displayAll}
-                 
+
                 </div>
             </div>
         </section>
