@@ -63,7 +63,7 @@ const Grid = () => {
         <div className ="col-md-4 boxes box6 card"  style={{ backgroundImage: `url("${devbox}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}>
         <div className="card-img-overlay card-inverse"> 
         <div className="flash-border">
-        <h4 className="text-stroke text-white box-text"> DEVELOPING</h4>
+        <Link to="/contactus"><h4 className="text-stroke text-white box-text"> DEVELOPING</h4></Link>
         </div>
         </div>
         </div>

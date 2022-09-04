@@ -107,6 +107,7 @@ li .dropdown-menu {
 
 .featured-map:hover div {
   background-color: black;
+  color:white;
 }
 
 .feature-sq::before {
@@ -143,8 +144,10 @@ li .dropdown-menu {
 .st-cntr,
 .price-cntr {
   background-color: lightgray;
-  color: white;
+  color: black;
 }
+
+
 
 .featured-st,
 .featured-price {
@@ -831,4 +834,5 @@ li {
     width: 15rem;
     margin-right: 8px;
   }
+ 
 }
