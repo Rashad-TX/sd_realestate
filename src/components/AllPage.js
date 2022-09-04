@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Bounce from 'react-reveal/Bounce';
 import { AllPropList } from "../helpers/AllPropList";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import formbg from "../assets/images/formbg3.png";
 
 const BedroomOptions = [
@@ -28,23 +28,13 @@ const SquareFeetOptions = [
     { min: 6000 }
 ]
 
-const PriceOptions = [
-    { min: 2000, max: 3000 },
-    { min: 3000, max: 4000 },
-    { min: 4000, max: 5000 },
-    { min: 5000, max: 6000 },
-    { min: 6000 }
-]
 
 
 const AllPage = () => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const [postPerPage, setPostPerPage] = useState(8)
-    const [numberOfBedrooms, setNumberOfBedrooms] = useState(undefined)
+       const [numberOfBedrooms, setNumberOfBedrooms] = useState(undefined)
     const [numberOfBathrooms, setNumberOfBathrooms] = useState(undefined)
     const [squarefeet, setSquarefeet] = useState(undefined)
-    const [priceMin, setPriceMin] = useState(0)
-    const [priceMax, setPriceMax] = useState(undefined)
+      
     const [sortOrder, setSortOrder] = useState('asc')
 
     const navigate = useNavigate();
@@ -117,7 +107,7 @@ const AllPage = () => {
 
                     </div>
 
-                    <div className="sort-sec">Sort Price $:  <input className="asc" type="radio" value="asc" onChange={() => setSortOrder('asc')} checked={sortOrder === 'asc'} />Highest <input type="radio" className="desc" value="desc" onChange={() => setSortOrder('desc')} checked={sortOrder == 'desc'} /> Lowest</div>
+                    <div className="sort-sec">Sort Price $:  <input className="asc" type="radio" value="asc" onChange={() => setSortOrder('asc')} checked={sortOrder === 'asc'} />Highest <input type="radio" className="desc" value="desc" onChange={() => setSortOrder('desc')} checked={sortOrder === 'desc'} /> Lowest</div>
                 </form>
 
             </div>

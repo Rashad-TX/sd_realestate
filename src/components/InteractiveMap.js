@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { Link } from "react-router-dom";
+
 import { AllPropList } from '../helpers/AllPropList'
 
 

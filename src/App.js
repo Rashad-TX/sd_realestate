@@ -2,7 +2,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import FeaturedDisplay from './components/FeaturedDisplay';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import AllDisplay from './components/AllDisplay';
 import AllPage from './components/AllPage';

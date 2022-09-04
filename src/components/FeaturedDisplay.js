@@ -5,9 +5,8 @@ import next from "../assets/images/next.png";
 import bedroom from "../assets/images/bedroom.svg";
 import bathroom from "../assets/images/bathroom.svg";
 import sqft from "../assets/images/sqft.svg";
-import Featured from "./Featured";
 import { useParams } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
+
 
 
 const FeaturedDisplay = () => {
@@ -15,7 +14,7 @@ const FeaturedDisplay = () => {
 const [sliderVisibility, setSliderVisibility] = useState('visible');
 
 const { id } = useParams();
-const navigate= useNavigate();
+
 
 const contentVisibility = () =>{
   if (sliderVisibility === 'visible'){
@@ -41,11 +40,11 @@ const contentVisibility = () =>{
     
     } else {
       setImgPos((imgPos) => imgPos + 1);
-    console.log(FeaturedList[id].images[imgPos])
+    
     }
   };
 
-console.log(FeaturedList[id].images[0])
+
 
     return(
 
@@ -54,8 +53,8 @@ console.log(FeaturedList[id].images[0])
 
 
 <div className="arrow-cntr">
-<div className="left-btn"><img src={prev} className="ft-disp-prev" onClick={previmg}/></div>
-<div className="right-btn"><img src={next} className="ft-disp-next" onClick={nextimg}/></div>
+<div className="left-btn"><img src={prev} className="ft-disp-prev"  alt="arrow" onClick={previmg}/></div>
+<div className="right-btn"><img src={next} className="ft-disp-next" alt="arrow" onClick={nextimg}/></div>
 
 </div>
 

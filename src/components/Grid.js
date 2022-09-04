@@ -1,4 +1,4 @@
-import react  from "react";
+import React  from "react";
 import listbox from '../assets/images/listbox.jpg';
 import imapbox from '../assets/images/imap.jpg';
 import offbox from '../assets/images/offbox.jpg';
@@ -6,8 +6,8 @@ import hoodbox from '../assets/images/hoodbox.jpg';
 import valbox from '../assets/images/valbox.jpg';
 import devbox from '../assets/images/devbox.jpg';
 import Zoom from 'react-reveal/Zoom';
-import {Link, Hashlink} from "react-router-dom";
-import { NavHashLink } from 'react-router-hash-link';
+import {Link} from "react-router-dom";
+
 
 
 const Grid = () => {

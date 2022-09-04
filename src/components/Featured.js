@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Bounce from 'react-reveal/Bounce';
 import { FeaturedList } from "../helpers/FeaturedList";
 import { useNavigate, Link } from "react-router-dom";

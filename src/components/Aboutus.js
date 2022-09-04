@@ -5,7 +5,7 @@ import stephm from "../assets/images/stephmoore.png";
 import nm from "../assets/images/neilmoore.png";
 import am from "../assets/images/alimoore.png";
 import jom from "../assets/images/JoannaMoore.png";
-import fm from "../assets/images/fetchmoore.png";
+
 import kimm from "../assets/images/kimmoore.png";
 import aubm from "../assets/images/AubreyMoore.png";
 import mm from "../assets/images/marshallmoore.png";
@@ -13,7 +13,7 @@ import tm from "../assets/images/tommymoore.png";
 import dm from "../assets/images/davemoore.png";
 import dom from "../assets/images/DominoeMoore.png";
 import rm from "../assets/images/rm2.png";
-import Zoom from 'react-reveal/Zoom';
+
 import Slide from 'react-reveal/Slide';
 
 const Aboutus = () => {
@@ -42,73 +42,73 @@ const Aboutus = () => {
         <div className="team-gallery container">
           <div className="row g-3">
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={stephm} className="team-img" />
+              <img src={stephm} className="team-img" alt="employee-image" />
               <div class="middle">
                 <div class="name-text">Wardell Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={kimm} className="team-img" />
+              <img src={kimm} className="team-img" alt="employee-image" />
               <div class="middle">
                 <div class="name-text">Kimberly Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={sm} className="team-img" />
+              <img src={sm} className="team-img"  alt="employee-image"/>
               <div class="middle">
                 <div class="name-text">Sebastian Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={jom} className="team-img" />
+              <img src={jom} className="team-img"  alt="employee-image"/>
               <div class="middle">
                 <div class="name-text">Magnolia Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={jm} className="team-img" />
+              <img src={jm} className="team-img" alt="employee-image" />
               <div class="middle">
                 <div class="name-text">Joe Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={aubm} className="team-img" />
+              <img src={aubm} className="team-img"  alt="employee-image"/>
               <div class="middle">
                 <div class="name-text">Aubrey Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={nm} className="team-img" />
+              <img src={nm} className="team-img" alt="employee-image" />
               <div class="middle">
                 <div class="name-text">Niel D Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={am} className="team-img" />
+              <img src={am} className="team-img" alt="employee-image" />
               <div class="middle">
                 <div class="name-text">Ali Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={tm} className="team-img" />
+              <img src={tm} className="team-img"  alt="employee-image"/>
               <div class="middle">
                 <div class="name-text">Tommy Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={dm} className="team-img" />
+              <img src={dm} className="team-img" alt="employee-image" />
               <div class="middle">
                 <div class="name-text">Dave Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={dom} className="team-img" />
+              <img src={dom} className="team-img" alt="employee-image" />
               <div class="middle">
                 <div class="name-text">Dominoe Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={mm} className="team-img" />
+              <img src={mm} className="team-img" alt="employee-image" />
               <div class="middle">
                 <div class="name-text">Marshall Moore</div>
               </div>

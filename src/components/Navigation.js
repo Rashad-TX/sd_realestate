@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/images/logoNew.png" ;
-import {Link, Hashlink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import { NavHashLink } from 'react-router-hash-link';
 
 const Navigation = () =>{

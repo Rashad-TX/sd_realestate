@@ -2,7 +2,6 @@ import React, {useState} from "react";
 
 import back from "../assets/images/left.png" ;
 import next from "../assets/images/right.png" ;
-import revbg from  "../assets/images/revbgjpg.jpg" ;
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 

@@ -1,5 +1,5 @@
 import React from "react";
-import bgpic from "../assets/images/sellerbg2.png";
+
 import mailicon from "../assets/images/mailicon.svg";
 import phoneicon from "../assets/images/phoneicon.svg";
 import markericon from "../assets/images/markericon.svg";
@@ -23,21 +23,18 @@ const Sellers = () => {
                                 <h4>Contact Information:</h4>
                                 <p>Our team will get back with you within 24 hours.</p>
                                 <div className="icon-text">
-                                    <img className="seller-contact-icon" src={phoneicon} />
+                                    <img className="seller-contact-icon" src={phoneicon} alt="phone-icon" />
                                     <span>619-555-555</span>
                                 </div>
                                 <div className="icon-text">
-                                    <img className="seller-contact-icon" src={mailicon} />
+                                    <img className="seller-contact-icon" src={mailicon}  alt="mail-icon"/>
                                     <span>SellSD@MooreGroup.re</span>
                                 </div>
                                 <div className="icon-text">
-                                    <img className="seller-contact-icon" src={markericon} />
+                                    <img className="seller-contact-icon" src={markericon}  alt="marker-icon"/>
                                     <span>1 Beach, San Diego 92107</span>
                                 </div>
-                                <div className="social-media">
-                                    <a href="#" className="icon-circle">  <img className="icon" /> </a>
-
-                                </div>
+                               
                             </div>
                             <div className="col-sm-12 col-md-8">
                                 <form>

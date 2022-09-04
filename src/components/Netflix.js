@@ -5,7 +5,7 @@ const Netflix =() =>{
 
     return(
         <div className="Netflix-ad" >
-       <img src={ad} className="img-fluid netflix-img"/>
+       <img src={ad} className="img-fluid netflix-img" alt="netflix-ad"/>
         </div>
     )
 }
