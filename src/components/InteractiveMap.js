@@ -12,7 +12,7 @@ const InteractiveMap = () => {
     const [lng] = useState(-117.2470);
     const [lat] = useState(32.7495);
     const [zoom] = useState(12);
-    const [API_KEY] = useState('TCXuHmomrZniR3kc3VAF');
+    const [API_KEY] = useState(process.env.REACT_APP_API_KEY);
 
 
     useEffect(() => {
