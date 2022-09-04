@@ -13,7 +13,7 @@ const InteractiveMap = () => {
     const [lat] = useState(32.7495);
     const [zoom] = useState(12);
    
-
+console.log(process.env.REACT_APP_API_KEY)
 
     useEffect(() => {
         if (map.current) return; //stops map from intializing more than once
