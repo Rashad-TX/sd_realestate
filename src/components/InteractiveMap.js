@@ -32,8 +32,11 @@ const InteractiveMap = () => {
                     .setHTML(`
                         <span>
                             <img height="150" src="${mark.mainimg}" />
-                            <h2>${mark.street}</h2>
-                            <h3>Price: ${mark.price}</h3>
+                            <h5 className="marker-st">${mark.street}</h4>
+                            <h6 className="marker-st">${mark.beds} Beds</h4>
+                            <h6 className="marker-st">${mark.baths} baths</h4>
+                            <h6 className="marker-st">${mark.sqft} SqFt</h4>
+                            <h5 className="marker-price">Price: ${mark.price}</h5>
                             <a href="/all/${mark.id}">More details</a>
                         </span>
                     `)
@@ -49,7 +52,7 @@ const InteractiveMap = () => {
 
 
     return (
-        <div className="map-wrap">
+        <div id="imap" className="map-wrap">
             <div ref={mapContainer} className="map" />
 
 

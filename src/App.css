@@ -10,24 +10,36 @@
  }
 
 .navbar-nav a{
-  color: white;
+  color: white !important;
   font-size: 1.1rem;
 
 }
 
  .navbar-nav a:hover{
- color: red;
+ text-decoration: underline red;
  
  }
 
-.dropdown-menu a{
-  color: black;
+li .dropdown-item {
+  color: black !important;
+ background-color: white !important;
 }
+
 
 .navbar-toggler-icon{
   background-color: red;
   border: solid white 0.1rem;
+}
 
+
+.hashlink {
+  color: white !important;
+}
+
+
+
+.dropdown-toggle{
+  color:white !important;
 }
 
 
@@ -495,7 +507,252 @@ flex-direction: column;
 }
 
 .sellers-sec{
+ background-image: url("/public/images/sellerbg2.png");
+ background-repeat:no-repeat;
+ background-size: cover;
+padding-bottom: 1.5rem;
+
+}
+
+.marker-st {
+  font-size:1rem;
+}
+
+.marker-price{
+  font-size:0.6rem;
+  font-weight: bolder;
+}
+
+.seller-slide-cntr{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
   width: 100%;
+}
+
+.seller-hdr{
+   padding-left: 2rem;
+  display: flex;
+  align-self: left;
+  justify-content: left;
+}
+
+.seller-contact{
+  font-size: 5rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.seller-contact::before{
+  content: url(/public/images/decor.png);
+  display: block;
+  color: red;
+       }
+
+
+.seller-us{
+  font-size: 4rem;
+  color: red;
+  margin-left: 10rem;
+}
+
+.sellerImg{
+  width: 100%;
+}
+
+.seller-img-cntr{
+  align-self: right;
+}
+
+#contact-container{
+  display: flex;
+border: 1px solid rgba(255,255,255,.4);
+backdrop-filter: blur(15px);
+  width:1200px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 36px 25px 0px -7px rgba(0,0,0,0.36);
+-webkit-box-shadow: 36px 25px 0px -7px rgba(0,0,0,0.36);
+-moz-box-shadow: 36px 25px 0px -7px rgba(0,0,0,0.36);
+align-self: center;
+}
+
+
+.contact-info{
+  background-color: red;
+  flex: 0 1 40%;
+  border-radius: 15px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info h4{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.seller-contact-icon{
+  width: 2rem;
+}
+.icon-text{
+  padding-top: 3rem;
+}
+
+.icon-text span{
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+ 
+}
+
+form{
+  padding: 40px;
+  width: 100%;
+}
+
+ form .col{
+display: flex;
+width: 100%;
+flex: 0 0 100%
+}
+
+.form-group{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 0 1 100%;
+  padding-right: 40px;
+}
+
+.form-group label{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .form-group input[type="text"], input[type="email"], input[type="tel"], textarea {
+    background: rgba(255,255,255,.2);
+  font-size: 1.4rem;  
+  padding: 5px;
+  border-bottom: 3px solid red;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 2rem;
+   
+  }
+#radio-buttons{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom:0.5rem;
+}
+
+.radio-btn{
+  margin-right: 20px;
+}
+
+.form-group button{
+  width: 200px;
+  height:50px;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  text-align:center;
+  justify-content: center;
+
+}
+.solo{
+  padding-top: 1rem;
+}
+
+
+.primary{
+  padding-top: 0.5rem;
+  background-color: red;
+  color: white;
+}
+.primary:hover{
+  background-color: rgb(255,0,0,0.7);
+}
+
+.team-img{
+  width: 20rem;
+}
+
+
+.footer{
+  padding-top:2rem;
+  background-color: black;
+  height: 10rem;
+  color: white;
+  display: flex;
+  font-size: 1.2rem;
+cursor: pointer;
+width: 100%;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+
+.footer li{
+  list-style: none;
+  
+}
+.footer a:hover{
+  color: red;
+}
+
+
+.footer-tm{
+  background-color: black;
+  display: flex;
+justify-content: center;
+color: white;
+}
+
+.three-containers{
+  background-image: url("/public/images/aboutbg.png");
+  background-size:cover;
+}
+
+.abtctnr:hover {
+  position: relative;
+
+ 
+}
+
+.team-img{
+  width: 20rem;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.middle {
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: red;
+  border: solid 1px;
+  color: white;
+
+}
+
+.middle:hover{
+  visibility: visible;
+}
+
+.name-text{
+  padding: 0.5rem;
+  font-size: 1.1rem;
 }
 
 

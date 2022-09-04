@@ -8,6 +8,7 @@ import AllDisplay from './components/AllDisplay';
 import AllPage from './components/AllPage';
 import InteractiveMap from './components/InteractiveMap';
 import Sellers from './components/Sellers';
+import Aboutus from './components/Aboutus';
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
       <Route path= "/all" element={<AllPage/>} />
       <Route path= "/all/:id" element={<AllDisplay/>} />
       <Route path = "/map" element= {<InteractiveMap/>} />
+      <Route path = "/contactus" element= {<Sellers/>} />
 </Routes>
-<Sellers/>
-    
+
+    <Aboutus/>
     <Footer/>
 
    

@@ -4,6 +4,8 @@ import Grid from './Grid';
 import Reviews from './Reviews';
 import Rotate from 'react-reveal/Rotate';
 import Netflix from './Netflix';
+import Sellers from './Sellers';
+import InteractiveMap from './InteractiveMap';
 
 function Home(){
 
@@ -16,6 +18,9 @@ function Home(){
             </Rotate>
         <Grid/>
         <Reviews/>
+        <InteractiveMap/>
+        <Sellers/>
+       
       </div>
     );
 }

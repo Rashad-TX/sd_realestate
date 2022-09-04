@@ -22,14 +22,14 @@ return(
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><NavHashLink className="dropdown-item" to="/#feat-sec">Featured</NavHashLink></li>
-            <Link to ="/all" className="dropdown-item" >All Listings</Link>
+           <li> <Link to ="/all" className="dropdown-item" >All Listings</Link></li>
                      </ul>
                      </li>
         <li className="nav-item">
           <Link to="/map" className="nav-link px-3">MAP </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link px-3" href="#">SELLERS</a>
+          <Link className="nav-link px-3 hashlink" to="/contactus" >SELLERS</Link>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
