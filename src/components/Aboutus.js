@@ -33,7 +33,7 @@ const Aboutus = () => {
       </div>
 
       <div id="ourteam">
-        <Slide left><div className="bioarea"><img src={rm} className="bio-pic2" />
+        <Slide left><div className="bioarea"><img src={rm} className="bio-pic2" alt ="boss" />
           <div className="ourteam-txt-cntr">
             <p className="about-txt"><span className="about-txt1">OUR</span><br /><span className="about-txt2">TEAM</span></p>
           </div>
