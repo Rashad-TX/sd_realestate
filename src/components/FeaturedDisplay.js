@@ -6,7 +6,7 @@ import bedroom from "../assets/images/bedroom.svg";
 import bathroom from "../assets/images/bathroom.svg";
 import sqft from "../assets/images/sqft.svg";
 import { useParams } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 
 const FeaturedDisplay = () => {
