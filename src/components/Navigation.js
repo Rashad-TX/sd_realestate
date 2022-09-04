@@ -17,7 +17,7 @@ return(
           <Link className="nav-link px-3 " aria-current="page" to="/" >HOME</Link> 
         </li> 
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle px-3" href="/#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             PROPERTIES
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -32,7 +32,7 @@ return(
           <Link className="nav-link px-3 hashlink" to="/contactus" >SELLERS</Link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle px-3" href="/#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             OUR TEAM
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

@@ -46,7 +46,7 @@ const Grid = () => {
         <div className ="col-md-4 boxes box4 card" style={{ backgroundImage: `url("${hoodbox}")`, backgroundPosition: 'center',  backgroundRepeat: 'no-repeat', height: 300, }}> 
         <div className="card-img-overlay card-inverse"> 
         <div className="flash-border">
-        <a href="https://www.sandiego.org/explore/coastal.aspx" target="_blank"> <h4 className="text-stroke text-white box-text"> CITY GUIDES</h4></a>
+        <a href="https://www.sandiego.org/explore/coastal.aspx" target="_blank" rel="noreferrer"> <h4 className="text-stroke text-white box-text"> CITY GUIDES</h4></a>
         </div>
         </div>
          </div>

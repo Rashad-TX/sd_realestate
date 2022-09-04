@@ -42,73 +42,73 @@ const Aboutus = () => {
         <div className="team-gallery container">
           <div className="row g-3">
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={stephm} className="team-img" alt="employee-image" />
+              <img src={stephm} className="team-img" alt="employee1" />
               <div class="middle">
                 <div class="name-text">Wardell Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={kimm} className="team-img" alt="employee-image" />
+              <img src={kimm} className="team-img" alt="employee2" />
               <div class="middle">
                 <div class="name-text">Kimberly Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={sm} className="team-img"  alt="employee-image"/>
+              <img src={sm} className="team-img"  alt="employee3"/>
               <div class="middle">
                 <div class="name-text">Sebastian Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={jom} className="team-img"  alt="employee-image"/>
+              <img src={jom} className="team-img"  alt="employee4"/>
               <div class="middle">
                 <div class="name-text">Magnolia Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={jm} className="team-img" alt="employee-image" />
+              <img src={jm} className="team-img" alt="employee5" />
               <div class="middle">
                 <div class="name-text">Joe Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={aubm} className="team-img"  alt="employee-image"/>
+              <img src={aubm} className="team-img"  alt="employee6"/>
               <div class="middle">
                 <div class="name-text">Aubrey Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={nm} className="team-img" alt="employee-image" />
+              <img src={nm} className="team-img" alt="employee7" />
               <div class="middle">
                 <div class="name-text">Niel D Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={am} className="team-img" alt="employee-image" />
+              <img src={am} className="team-img" alt="employee8" />
               <div class="middle">
                 <div class="name-text">Ali Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={tm} className="team-img"  alt="employee-image"/>
+              <img src={tm} className="team-img"  alt="employee9"/>
               <div class="middle">
                 <div class="name-text">Tommy Moore</div>
               </div>
             </div>
             <div className=" abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={dm} className="team-img" alt="employee-image" />
+              <img src={dm} className="team-img" alt="employee10" />
               <div class="middle">
                 <div class="name-text">Dave Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={dom} className="team-img" alt="employee-image" />
+              <img src={dom} className="team-img" alt="employee11" />
               <div class="middle">
                 <div class="name-text">Dominoe Moore</div>
               </div>
             </div>
             <div className="abtctnr col col-lg-3 col-md-3 col-sm-6 col-6">
-              <img src={mm} className="team-img" alt="employee-image" />
+              <img src={mm} className="team-img" alt="employee12" />
               <div class="middle">
                 <div class="name-text">Marshall Moore</div>
               </div>
