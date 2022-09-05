@@ -16,8 +16,10 @@ const InteractiveMap = () => {
 
 
     useEffect(() => {
-        console.log(api_key ,"I came from useEffect")
+        console.log(map.current ,"I came from useEffect")
+        
         if (map.current) return; //stops map from intializing more than once
+        console.log(map.current ,"I came from useEffect2")
         map.current = new maplibregl.Map({
             container: mapContainer.current,
             style: `https://api.maptiler.com/maps/streets/style.json?key=${api_key}`,
@@ -25,11 +27,11 @@ const InteractiveMap = () => {
             zoom: zoom
            
         });
+        console.log(map.current ,"I came from useEffect3")
         map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
-
+        console.log(map.current ,"I came from useEffect4")
         AllPropList.forEach(mark => {
-            console.log(mark,"mark")
-            new maplibregl.Marker({ color: "#FF0000" })
+                 new maplibregl.Marker({ color: "#FF0000" })
                 .setLngLat([mark.latitude, mark.longitude])
                 .setPopup(new maplibregl.Popup()
                     .setHTML(`
