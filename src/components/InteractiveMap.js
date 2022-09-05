@@ -5,6 +5,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 import { AllPropList } from '../helpers/AllPropList'
 
+const api_key= process.env.REACT_APP_API_KEY;
 
 const InteractiveMap = () => {
 
@@ -13,7 +14,7 @@ const InteractiveMap = () => {
     const [lng] = useState(-117.2470);
     const [lat] = useState(32.7495);
     const [zoom] = useState(12);
-   const api_key= process.env.REACT_APP_API_KEY;
+
 
 
     useEffect(() => {
@@ -28,7 +29,7 @@ const InteractiveMap = () => {
             zoom: zoom
            
         });
-        console.log(map.current ,"I came from useEffect3")
+        console.log(map.current ,"I came from useEffect3", mapContainer.current)
         map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
         console.log(map.current ,"I came from useEffect4")
         AllPropList.forEach(mark => {
