@@ -7,6 +7,7 @@ import Netflix from './Netflix';
 import Sellers from './Sellers';
 import InteractiveMap from './InteractiveMap';
 
+
 function Home(){
 
     return(

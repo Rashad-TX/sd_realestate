@@ -26,7 +26,7 @@ return(
                      </ul>
                      </li>
         <li className="nav-item">
-          <Link to="/map" className="nav-link px-3">MAP </Link>
+          <Link to="/map" className="nav-link px-3">INTERACTIVE MAP </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link px-3 hashlink" to="/contactus" >SELLERS</Link>

@@ -74,6 +74,8 @@ console.log(AllPropList[id].images[0])
 <div className="slider-bed">{AllPropList[id].beds}<img src={bedroom} alt="bedroom-img"/> <p>BEDS</p></div>
 <div className="slider-bath"> {AllPropList[id].baths}<img src={bathroom} alt ="bathroom-img"/><p>BATHS</p></div>
 <div className="slider-sqft"> {AllPropList[id].sqft}<img src={sqft} alt ="sqft-img"/><p>SQ FT</p></div>
+<div><Link to ="/map">View Map</Link></div>
+<div><Link to ="/contactus">Contact us about this property</Link></div>
 </div>
 </div>
 

@@ -253,7 +253,7 @@ li .dropdown-menu {
 
 .review-sec {
   padding-top: 5rem;
-  padding-bottom: 3rem;
+padding-bottom: 0.5rem;
 }
 
 .main-card-cntr {
@@ -348,6 +348,9 @@ li .dropdown-menu {
   padding-left: 10rem;
 }
 
+#imap{
+  padding-bottom: 1rem;
+}
 .ft-disp-sec {
   display: flex;
   flex-direction: column;
@@ -667,7 +670,7 @@ textarea {
   font-size: 1.2rem;
   cursor: pointer;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -677,6 +680,8 @@ textarea {
 .footer a:hover {
   color: red;
 }
+
+
 
 .footer-tm {
   background-color: black;
@@ -804,9 +809,16 @@ li {
   .rev-txt-2 {
     padding-left: 0;
   }
+  .logo3 {
+   display:none;
+  }
   .footer-tm {
     display: none;
   }
+.footer-cntr1{
+  padding-right:5rem;
+}
+
   .footer-cntr2 {
     padding-right: 10px;
   }
