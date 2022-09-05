@@ -23,7 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "export REACT_APP_API_KEY =\" TCXuHmomrZniR3kc3VAF \" && react-scripts build",
+    "build": "environment && react-scripts build",
+    "environment": "export REACT_APP_API_KEY=TCXuHmomrZniR3kc3VAF",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
