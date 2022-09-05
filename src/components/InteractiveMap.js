@@ -28,6 +28,7 @@ const InteractiveMap = () => {
         map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
 
         AllPropList.forEach(mark => {
+            console.log(mark,"mark")
             new maplibregl.Marker({ color: "#FF0000" })
                 .setLngLat([mark.latitude, mark.longitude])
                 .setPopup(new maplibregl.Popup()
