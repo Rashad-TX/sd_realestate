@@ -2,7 +2,9 @@ import React  from "react";
 import Map, { NavigationControl } from "react-map-gl";
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-
+import mapboxgl from "mapbox-gl";
+//eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 // import { AllPropList } from '../helpers/AllPropList'
 
