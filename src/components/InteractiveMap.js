@@ -1,20 +1,20 @@
-import React, { useRef, useEffect, useState } from "react";
+import React  from "react";
 import Map, { NavigationControl } from "react-map-gl";
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 
-import { AllPropList } from '../helpers/AllPropList'
+// import { AllPropList } from '../helpers/AllPropList'
 
 const api_key = process.env.REACT_APP_API_KEY;
 
 const InteractiveMap = () => {
 
-    const mapContainer = useRef(null);
-    const map = useRef(null);
-    const [lng] = useState(-117.2470);
-    const [lat] = useState(32.7495);
-    const [zoom] = useState(12);
+    // const mapContainer = useRef(null);
+    // const map = useRef(null);
+    // const [lng] = useState(-117.2470);
+    // const [lat] = useState(32.7495);
+    // const [zoom] = useState(12);
 
 
 
