@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import ReactMapGL, { FlyToInterpolator, NavigationControl } from 'react-map-gl';   
+  
 
 import { AllPropList } from '../helpers/AllPropList'
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 
 const InteractiveMap = () => {
 
