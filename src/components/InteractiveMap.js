@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import Map, { NavigationControl } from "react-map-gl";
+
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import mapboxgl from "mapbox-gl";
@@ -7,7 +7,7 @@ import { AllPropList } from '../helpers/AllPropList'
 
 
 const mapboxtoken = process.env.REACT_APP_Mapbox
-const api_key= process.env.REACT_APP_API_KEY;
+// const api_key= process.env.REACT_APP_API_KEY;
 mapboxgl.accessToken = process.env.REACT_APP_Mapbox;
 const InteractiveMap = () => {
     mapboxgl.accessToken = mapboxtoken;
