@@ -2,14 +2,15 @@ import React, { useRef, useEffect, useState } from "react";
 import Map, { NavigationControl } from "react-map-gl";
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-  
-
+import mapboxgl from "mapbox-gl";
 import { AllPropList } from '../helpers/AllPropList'
 
+
+const mapboxtoken = process.env.REACT_APP_Mapbox
 const api_key= process.env.REACT_APP_API_KEY;
-
+mapboxgl.accessToken = process.env.REACT_APP_Mapbox;
 const InteractiveMap = () => {
-
+    mapboxgl.accessToken = mapboxtoken;
     const mapContainer = useRef(null);
     const map = useRef(null);
     const [lng] = useState(-117.2470);
@@ -19,18 +20,18 @@ const InteractiveMap = () => {
 
 
     useEffect(() => {
-        console.log(map.current ,"I came from useEffect")
+   
         
         if (map.current) return; //stops map from intializing more than once
-        console.log(map.current ,"I came from useEffect2")
-        map.current = new maplibregl.Map({
+      
+        map.current = new mapboxgl.Map({
             container: mapContainer.current,
-            style: `https://api.maptiler.com/maps/streets/style.json?key=${api_key}`,
+            style:'mapbox://styles/mapbox/streets-v11',
             center: [lng, lat],
             zoom: zoom
            
         });
-        console.log(map.current ,"I came from useEffect3", mapContainer.current)
+       
         map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
         console.log(map.current ,"I came from useEffect4")
         AllPropList.forEach(mark => {
