@@ -7,6 +7,7 @@ import car3 from "../assets/images/carNew2.png";
 import car5 from "../assets/images/CarNew02.png";
 import car6 from "../assets/images/carandbg1.png";
 import clogo from "../assets/images/blogonew.png" ;
+import {Link} from "react-router-dom";
 
 
 
@@ -23,8 +24,8 @@ const Hero =() => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <img src={clogo}  alt="brand logo" className="c-logo"/>
-          <div className="hero-btn-cntr"><button className="hero-btn">View Properties</button></div>
+         <img src={clogo}  alt="brand logo" className="c-logo"/>
+          <div className="hero-btn-cntr"><Link to= "/all" ><button className="hero-btn">View Properties</button></Link></div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2200}>
@@ -36,7 +37,7 @@ const Hero =() => {
 
         <Carousel.Caption>
         <img src={clogo}  alt="brand logo" className="c-logo"/>
-        <div className="hero-btn-cntr"><button className="hero-btn">View Properties</button></div>
+        <div className="hero-btn-cntr"><Link to= "/all" ><button className="hero-btn">View Properties</button></Link></div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2200}>
@@ -48,7 +49,7 @@ const Hero =() => {
 
         <Carousel.Caption>
           <img src={clogo}  alt="brand logo" className="c-logo"/>
-          <div className="hero-btn-cntr"><button className="hero-btn">View Properties</button></div>
+          <div className="hero-btn-cntr"><Link to= "/all" ><button className="hero-btn">View Properties</button></Link></div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2200}>
@@ -59,7 +60,7 @@ const Hero =() => {
         />
         <Carousel.Caption>
         <img src={clogo}  alt="brand logo" className="c-logo"/>
-        <div className="hero-btn-cntr"><button className="hero-btn">View Properties</button></div>
+        <div className="hero-btn-cntr"><Link to= "/all" ><button className="hero-btn">View Properties</button></Link></div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2200}>
@@ -70,7 +71,7 @@ const Hero =() => {
         />
         <Carousel.Caption>
         <img src={clogo}  alt="brand logo" className="c-logo"/>
-        <div className="hero-btn-cntr"><button className="hero-btn">View Properties</button></div>
+        <div className="hero-btn-cntr"><Link to= "/all" ><button className="hero-btn">View Properties</button></Link></div>
         </Carousel.Caption>
       </Carousel.Item>
       
@@ -82,7 +83,7 @@ const Hero =() => {
         />
         <Carousel.Caption>
           <img src={clogo}  alt="brand logo" className="c-logo"/>
-          <div className="hero-btn-cntr"><button className="hero-btn">View Properties</button></div>
+          <div className="hero-btn-cntr"><Link to= "/all" ><button className="hero-btn">View Properties</button></Link></div>
         </Carousel.Caption>
         </Carousel.Item>
     </Carousel>
